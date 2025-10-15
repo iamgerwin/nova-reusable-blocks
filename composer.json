@@ -1,0 +1,82 @@
+{
+    "name": "iamgerwin/nova-reusable-blocks",
+    "description": "A Laravel Nova package for creating reusable section blocks for headless CMS API responses",
+    "keywords": [
+        "Gerwin",
+        "laravel",
+        "laravel-nova",
+        "nova",
+        "nova-blocks",
+        "reusable-blocks",
+        "headless-cms",
+        "carousel",
+        "nova-reusable-blocks"
+    ],
+    "homepage": "https://github.com/iamgerwin/nova-reusable-blocks",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "iamgerwin",
+            "email": "iamgerwin@live.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "spatie/laravel-package-tools": "^1.16",
+        "illuminate/contracts": "^10.0||^11.0"
+    },
+    "suggest": {
+        "laravel/nova": "Required for using Nova Resources (^4.0)",
+        "whitecube/nova-flexible-content": "Required for flexible content blocks (^1.0)",
+        "outl1ne/nova-media-hub": "Optional for advanced media management"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.14",
+        "nunomaduro/collision": "^8.8",
+        "larastan/larastan": "^3.0",
+        "orchestra/testbench": "^10.0.0||^9.0.0",
+        "pestphp/pest": "^4.0",
+        "pestphp/pest-plugin-arch": "^4.0",
+        "pestphp/pest-plugin-laravel": "^4.0",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "spatie/laravel-ray": "^1.35"
+    },
+    "autoload": {
+        "psr-4": {
+            "Iamgerwin\\NovaReusableBlocks\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Iamgerwin\\NovaReusableBlocks\\Tests\\": "tests/",
+            "Workbench\\App\\": "workbench/app/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@composer run prepare",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iamgerwin\\NovaReusableBlocks\\NovaReusableBlocksServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

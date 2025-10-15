@@ -1,0 +1,12 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    level: 9
+    paths:
+        - src
+    tmpDir: build/phpstan
+    checkOctaneCompatibility: true
+    checkModelProperties: true
+    ignoreErrors:
+        - '#(Call to static method|Call to an undefined method|Parameter|Return type|has invalid return type) .* (on an unknown class|of class) (Whitecube\\NovaFlexibleContent\\Flexible|Laravel\\Nova\\Fields)#'

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Iamgerwin\NovaReusableBlocks\Tests;
 
-use Iamgerwin\NovaReusableBlocks\NovaApiBlocksServiceProvider;
+use Iamgerwin\NovaReusableBlocks\NovaReusableBlocksServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -17,7 +17,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            NovaApiBlocksServiceProvider::class,
+            NovaReusableBlocksServiceProvider::class,
         ];
     }
 

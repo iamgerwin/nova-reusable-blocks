@@ -30,7 +30,6 @@ class CarouselBannerBlock
                 Flexible::make('Slides', 'slides')
                     ->addLayout(...CarouselSlideItem::make())
                     ->button('Add Slide')
-                    ->rules('required')
                     ->help('Add and configure individual slides with images, text, and CTAs'),
 
                 Text::make('Banner Title', 'banner_title')

@@ -36,4 +36,4 @@ All notable changes to `nova-reusable-blocks` will be documented in this file.
 - PHPStan level 9 compliance
 - Complete documentation
 - Laravel Nova 4.0+ support
-- Laravel 10.0+ and 11.0+ support
+- Laravel 10.0, 11.0, and 12.0 support

@@ -28,6 +28,7 @@ composer require iamgerwin/nova-reusable-blocks
 
 The package requires:
 - PHP 8.2 or higher
+- Laravel 10.0, 11.0, or 12.0
 - Laravel Nova 4.0 or higher
 - `whitecube/nova-flexible-content` package
 

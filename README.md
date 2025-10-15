@@ -255,6 +255,13 @@ Please see [CHANGELOG](CHANGELOG.md) for recent changes.
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+This project follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages. Please read our [Contributing Guide](CONTRIBUTING.md) for detailed information about:
+
+- Commit message format and examples
+- Development workflow
+- Coding standards
+- Pull request guidelines
+
 ## Security Vulnerabilities
 
 Please review [our security policy](../../security/policy) on how to report security vulnerabilities.

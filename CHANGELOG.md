@@ -2,7 +2,33 @@
 
 All notable changes to `nova-reusable-blocks` will be documented in this file.
 
-## 0.0.1 - 2025-10-15
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
+and [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+
+## [0.0.2] - 2025-10-15
+
+### Added
+
+- docs: add CONTRIBUTING.md with Conventional Commits guidelines
+- docs: add commit message format and examples
+- docs: add development workflow documentation
+- docs: add coding standards and PR guidelines
+
+### Changed
+
+- docs: update README with Contributing section
+- docs: update CHANGELOG format to follow Keep a Changelog
+
+### Fixed
+
+- fix(deps): add Laravel 12 support to resolve GitHub Actions failures
+- fix(deps): update Pest dependencies to support both v3 and v4
+- fix(deps): correct orchestra/testbench version order
+- fix(tests): correct ServiceProvider class reference in TestCase
+- fix(tests): skip tests requiring Nova Flexible Content in test environment
+
+## [0.0.1] - 2025-10-15
 
 ### Added
 

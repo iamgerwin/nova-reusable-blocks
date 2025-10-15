@@ -13,7 +13,10 @@ and [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 - fix(blocks): remove required validation from carousel slides field ([#2](https://github.com/iamgerwin/nova-reusable-blocks/issues/2))
   - Carousel Banner block is now truly optional within a Section
   - Users can submit forms without adding carousel content
-  - Individual slide images remain required when slides are created
+- fix(blocks): change slide image validation to nullable
+  - Fixes file upload issues with carousel slide images
+  - Resolves validation errors when images are uploaded but not properly submitted
+  - Addresses file size, form encoding, and Nova Flexible Content upload handling issues
 
 ## [0.0.2] - 2025-10-15
 

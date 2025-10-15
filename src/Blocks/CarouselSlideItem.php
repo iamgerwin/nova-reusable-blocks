@@ -104,13 +104,13 @@ class CarouselSlideItem
         // Check if NovaMediaHub is installed
         if (class_exists(\Outl1ne\NovaMediaHub\Nova\Fields\MediaHubField::class)) {
             return \Outl1ne\NovaMediaHub\Nova\Fields\MediaHubField::make('Slide Image', 'media_slide_image')
-                ->rules('required')
+                ->nullable()
                 ->help('Upload the image for this slide');
         }
 
         // Fallback to regular Image field
         return Image::make('Slide Image', 'slide_image')
-            ->rules('required')
+            ->nullable()
             ->disk('public')
             ->help('Upload the image for this slide');
     }

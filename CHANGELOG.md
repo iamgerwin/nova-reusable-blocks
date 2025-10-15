@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 and [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [Unreleased]
+
+### Added
+
+- feat(blocks): add Hero Block with image/video/carousel support
+- feat(blocks): add Hero Text Block for simple text-based heroes
+- feat(blocks): add Gallery Block with MediaHub support
+- feat(blocks): add Image Divider Block with layout options
+- feat(blocks): add WYSIWYG Block with flexible editor support (TinymceEditor, Trix, or Textarea)
+- All blocks include MediaHub detection with fallback to standard Nova fields
+
 ## [0.0.3] - 2025-10-15
 
 ### Fixed

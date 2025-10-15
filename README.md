@@ -12,6 +12,11 @@ A Laravel Nova package that provides reusable section blocks for building dynami
 ## Features
 
 - 🎠 **Carousel Banner Block** - Fully-featured carousel with customizable slides, transitions, and interactive elements
+- 🦸 **Hero Block** - Dynamic hero sections with image, video, or carousel options
+- 📝 **Hero Text Block** - Text-only hero sections for simple headers
+- 🖼️ **Gallery Block** - Image galleries with MediaHub support
+- 🌆 **Image Divider Block** - Content dividers with images and CTAs
+- 📄 **WYSIWYG Block** - Rich text content with flexible editor support
 - 🔧 **Extensible Architecture** - Easy to add your own custom blocks
 - 📱 **Headless CMS Ready** - Designed for API consumption by frontend frameworks
 - 🎨 **Rich Configuration** - Comprehensive options via enums for type safety
@@ -71,7 +76,15 @@ Use a different field name for your flexible content:
 Section::all('page_data')  // Will store in 'page_data' column
 ```
 
-## Carousel Banner Block
+## Available Blocks
+
+### Hero Block
+A flexible hero component supporting image, video, or carousel backgrounds. Uses MediaHub when available or falls back to Image/URL fields.
+
+### Hero Text Block
+A simple hero section with title, subtitle, and description.
+
+### Carousel Banner Block
 
 The Carousel Banner is a feature-rich content block that creates dynamic image carousels with customizable options.
 
@@ -157,6 +170,20 @@ The carousel data will be available in your API responses in this format:
   }
 }
 ```
+
+### Gallery Block
+Display multiple images in a gallery format. Supports MediaHub for advanced media management or falls back to text input for image URLs.
+
+### Image Divider Block
+A content divider section with an image, title, subtitle, and optional CTA button. Choose between two layout options (image left or right).
+
+### WYSIWYG Block
+Rich text content block with flexible editor support. Automatically detects and uses:
+- TinymceEditor (if installed)
+- Trix (Nova's default rich text editor)
+- Textarea (fallback for HTML/Markdown)
+
+Includes optional table of contents display.
 
 ## Extending with Custom Blocks
 

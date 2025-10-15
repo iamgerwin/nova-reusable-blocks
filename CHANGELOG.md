@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 and [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [Unreleased]
+
+### Fixed
+
+- fix(blocks): remove required validation from carousel slides field ([#2](https://github.com/iamgerwin/nova-reusable-blocks/issues/2))
+  - Carousel Banner block is now truly optional within a Section
+  - Users can submit forms without adding carousel content
+  - Individual slide images remain required when slides are created
+
 ## [0.0.2] - 2025-10-15
 
 ### Added

@@ -8,9 +8,10 @@ use Iamgerwin\NovaReusableBlocks\Section;
 it('returns a result from all() method', function () {
     if (! class_exists('Whitecube\NovaFlexibleContent\Flexible')) {
         expect(true)->toBeTrue();
+
         return;
     }
-    
+
     $flexible = Section::all();
     expect($flexible)->toBeObject();
 })->skip('Nova Flexible Content not installed in test environment');
@@ -18,9 +19,10 @@ it('returns a result from all() method', function () {
 it('accepts custom field name', function () {
     if (! class_exists('Whitecube\NovaFlexibleContent\Flexible')) {
         expect(true)->toBeTrue();
+
         return;
     }
-    
+
     $flexible = Section::all('custom_field');
     expect($flexible)->toBeObject();
 })->skip('Nova Flexible Content not installed in test environment');
@@ -28,9 +30,10 @@ it('accepts custom field name', function () {
 it('can hide create button', function () {
     if (! class_exists('Whitecube\NovaFlexibleContent\Flexible')) {
         expect(true)->toBeTrue();
+
         return;
     }
-    
+
     $flexible = Section::all('data', true);
     expect($flexible)->toBeObject();
 })->skip('Nova Flexible Content not installed in test environment');
@@ -38,9 +41,10 @@ it('can hide create button', function () {
 it('includes carousel banner block by default', function () {
     if (! class_exists('Whitecube\NovaFlexibleContent\Flexible')) {
         expect(true)->toBeTrue();
+
         return;
     }
-    
+
     $blocks = (new class extends Section
     {
         public static function getBlocks(): array
@@ -77,9 +81,10 @@ it('can register a custom block', function () {
 it('carousel banner block returns proper structure', function () {
     if (! class_exists('Whitecube\NovaFlexibleContent\Flexible')) {
         expect(true)->toBeTrue();
+
         return;
     }
-    
+
     $section = CarouselBannerBlock::section();
 
     expect($section)->toBeArray()

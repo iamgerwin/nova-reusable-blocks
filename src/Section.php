@@ -5,6 +5,11 @@ declare(strict_types=1);
 namespace Iamgerwin\NovaReusableBlocks;
 
 use Iamgerwin\NovaReusableBlocks\Blocks\CarouselBannerBlock;
+use Iamgerwin\NovaReusableBlocks\Blocks\GalleryBlock;
+use Iamgerwin\NovaReusableBlocks\Blocks\HeroBlock;
+use Iamgerwin\NovaReusableBlocks\Blocks\HeroTextBlock;
+use Iamgerwin\NovaReusableBlocks\Blocks\ImageDividerBlock;
+use Iamgerwin\NovaReusableBlocks\Blocks\WYSIWYGBlock;
 use Whitecube\NovaFlexibleContent\Flexible;
 
 class Section
@@ -48,7 +53,12 @@ class Section
     protected static function getDefaultBlocks(): array
     {
         return [
+            HeroBlock::section(),
+            HeroTextBlock::section(),
             CarouselBannerBlock::section(),
+            GalleryBlock::section(),
+            ImageDividerBlock::section(),
+            WYSIWYGBlock::section(),
         ];
     }
 
